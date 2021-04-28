@@ -1,0 +1,24 @@
+<h1>Cales#index</h1>
+<p>Find me in app/views/cales/index.html.erb</p>
+
+<table><tr><td valign="top">
+<table border="1">
+<% e=Date.new(2021, 4, -1) %>
+<% s=Date.new(2021, 4, 1) %>
+<% for @i in  s..e %>
+    <TR><TD><%= @i %></td><td><%= %w(日 月 火 水 木 金 土)[@i.wday] %></td>
+      <td width="350"></td>
+      <% end %>
+</table>
+</td><td>
+<table border="1">
+<% e=Date.new(2021, 5, -1) %>
+<% s=Date.new(2021, 5, 1) %>
+<% for @i in  s..e %>
+    <TR><TD><%= @i %></td><td><%= %w(日 月 火 水 木 金 土)[@i.wday] %></td>
+      <td width="350"></td>
+
+      <% end %>
+        </table>
+</td>
+</table>
